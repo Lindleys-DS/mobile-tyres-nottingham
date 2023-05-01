@@ -1,0 +1,53 @@
+---
+export interface Props{
+    heading: String,
+    subheading: String,
+    formStyle: String,
+}
+
+const {heading, subheading, formStyle="online"} = Astro.props;
+---
+<section id="hero" class="py-5 d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 text-center text-lg-start mb-5 mb-lg-0 text-light">
+                <h1 class="display-5 fw-bold">{heading}</h1>
+                <p class="fs-3">{subheading}</p>
+            </div>
+            <div class="offset-lg-2 col-lg-4 col-12">
+            { formStyle == "online" ? 
+                <form action="https://www.mobiletyres-nottingham.co.uk/vrnsearch/details" method="get" class="border p-3 border-dark bg-light rounded-3">
+                    <p class="fs-3 fw-bold text-center">Get a Quote</p>
+                    <input type="text" name="VRN" class="form-control form-control-lg mb-3 text-center" placeholder="Enter Reg">
+                    <div class="d-grid">
+                        <button class="btn btn-dark btn-lg" type="submit">Search</button>
+                    </div>
+                </form>
+                : null
+            }
+            { formStyle == "normal" ?
+                <form action="#" class="border p-3 border-dark bg-light rounded-3">
+                    <p class="fs-3 fw-bold text-center">Get a Quote</p>
+                    <input type="text" class="form-control form-control-lg mb-3" name="name" placeholder="Name">
+                    <input type="tel" class="form-control form-control-lg mb-3" name="tel" placeholder="Phone">
+                    <input type="email" class="form-control form-control-lg mb-3" name="email" placeholder="Email">
+                    <textarea name="message" cols="30" rows="3" class="form-control form-control-lg mb-3" placeholder="How can we help?"></textarea>
+                    <div class="d-grid">
+                        <button class="btn btn-dark btn-lg">Submit</button>
+                    </div>
+                </form>
+                : null
+            }
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    #hero {
+        background:linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url("/imgs/mobile-tyre-van.jpg");
+        background-size: cover;
+        background-position: center;
+        min-height: 70vh;
+    }
+</style>
