@@ -1,6 +1,7 @@
 ---
 import Registration from "../components/hero-forms/Registration.astro"
 import TyreSize from "../components/hero-forms/TyreSize.astro"
+import Tyreclick from "../components/hero-forms/Tyreclick.astro"
 
 export interface Props {
     heading: string,
@@ -34,6 +35,7 @@ const { heading, tagline, bgImg, formOption = "registration" } = Astro.props;
             <div class="col-12 offset-lg-2 col-lg-4 d-flex justify-content-center align-items-center flex-column">
                 { formOption === "registration" && <Registration />}
                 { formOption === "tyresize" && <TyreSize />}
+                { formOption === "tyreclick" && <Tyreclick />}
             </div>
         </div>
     </div>
