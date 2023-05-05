@@ -1,0 +1,70 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Hero from "../components/Hero.astro"
+import Testimonials from "../components/Testimonials.astro"
+import CTA from "../components/CTA.astro"
+
+const title = ""
+const description = ""
+const index = true
+const bgImg = ""
+const heading = ""
+const tagline = ""
+const formOption = "registration"
+const mainHeading = ""
+---
+
+<Layout title={title} description={description} index={index}>
+    <Hero heading={heading} tagline={tagline} bgImg={bgImg} formOption={formOption} />
+    <div class="container py-5">
+        <div class="row">
+            <main class="col-12 col-lg-8">
+                <h1 class="text-center text-lg-start">{mainHeading}</h1>
+               
+                <h2>Why Choose Mobile Tyres Nottingham?</h2>
+                <ul>
+                    <li>Convenient and efficient service that comes to you.</li>
+                    <li>Experienced technicians who use state-of-the-art equipment.</li>
+                    <li>Wide range of tyres from leading manufacturers at competitive prices.</li>
+                    <li>Exceptional customer service and integrity as a family-run business.</li>
+                    <li>Open 6 days a week with <a href="/emergency-tyre-replacement">same day fitting</a> available.</li>
+                </ul>
+                <h2>Get A Quote Today</h2>
+                <p>At Mobile Tyres Nottingham, we are committed to providing customers with a range of high-quality services that are both efficient and affordable. <a href="/contact-us">Contact us</a> today to learn more about our services or to schedule an appointment.</p>
+            </main>
+            <div class="col-12 col-lg-4">
+                <aside class="container">
+                    <div class="border rounded-3 shadow-sm py-4 row mb-3">
+                        <div class="col-3 text-center">
+                            <i class="bi bi-calendar fs-1"></i>
+                        </div>
+                        <div class="col-9 text-start">
+                            <h3 class="mb-0">Flexible Service</h3>
+                            <p class="mb-0">Open 6 days a week</p>
+                        </div>
+                    </div>
+                    <div class="border rounded-3 shadow-sm py-4 bg-dark text-white row mb-3">
+                        <div class="col-3 text-center">
+                            <i class="bi bi-car-front fs-1"></i>
+                        </div>
+                        <div class="col-9 text-start">
+                            <h3 class="mb-0">Fast Arrival</h3>
+                            <p class="mb-0">Same day service</p>
+                        </div>
+                    </div>
+                    <div class="border rounded-3 shadow-sm bg-success text-white py-4 row mb-3">
+                        <div class="col-3 text-center">
+                            <i class="bi bi-map fs-1"></i>
+                        </div>
+                        <div class="col-9 text-start">
+                            <h3 class="mb-0">Local Areas</h3>
+                            <p class="mb-0">We serve {title} and surrounding areas</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    <Testimonials />
+    <CTA />
+</Layout>

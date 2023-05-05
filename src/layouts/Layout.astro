@@ -7,7 +7,7 @@ import Footer from "../components/Footer.astro"
 export interface Props {
 	description: string,
 	title: string,
-	index: string,
+	index: boolean,
 }
 
 const { description, title, index = true } = Astro.props;

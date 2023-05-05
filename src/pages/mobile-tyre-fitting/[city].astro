@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 const { title, about } = Astro.props;
 ---
 
-<Layout title={title} description={`Have your tyres fitted at your home in ${title} with our convenient mobile tyre fitting service. Call us today for a quote.`} index="true">
+<Layout title={`Mobile Tyre Fitting In ${title}`} description={`Have your tyres fitted at your home in ${title} with our convenient mobile tyre fitting service. Call us today for a quote.`} index={true}>
     <Hero heading={`Mobile Tyre Fitting in ${title}`} tagline="We can come to you at home, work, or roadside" bgImg="url(/img/mobile-tyre-fitting-van.jpg)" formOption="registration" />
 
         <div class="container py-5">
