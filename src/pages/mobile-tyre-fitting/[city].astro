@@ -1,6 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro"
 import Hero from "../../components/Hero.astro"
+import Benefits from "../../components/Benefits.astro"
 import CTA from "../../components/CTA.astro"
 
 export async function getStaticPaths() {
@@ -28,57 +29,35 @@ const { title, about } = Astro.props;
 
         <div class="container py-5">
             <div class="row">
-                <main class="col-12 col-lg-8">
-                    <h1 class="text-center text-lg-start">Mobile Tyre Fitting in {title}</h1>
-                    <p>Do you find yourself stranded with a <strong>flat tyre in {title}?</strong> Why not try our hassle-free <strong>mobile tyre fitting</strong> service instead! Our team can travel to your location, whether it's at home or on the side of the road, and install new tyres for you today.</p>
-                    <div class="p-4 bg-light my-3 rounded-3">
-                        <h2>About {title}</h2>
-                        <p>{about}</p>
-                    </div>
-                    <h2>Tyre Services In {title}</h2>
-                    <p><strong>Mobile Tyres Nottingham</strong> offers a range of services in <strong>{title}</strong> and the surrounding areas to help keep your vehicle running safely and efficiently. Our <a href="/mobile-puncture-repair">mobile puncture repair service</a> is available to fix any holes or damage to your tyres, saving you the cost of buying new tyres. We also offer <a href="/locking-wheel-nut-removal">locking wheel nut removal</a> services for those who have lost or damaged their locking wheel nut key.</p>
-                    <p>If you're having trouble starting your vehicle, our <a href="/mobile-battery-replacement">mobile car battery replacement</a> service can help. We offer battery replacement on most makes and models of vehicles in {title}. Additionally, if your vehicle is equipped with <a href="/tyre-pressure-monitoring-systems">TPMS</a>, we can programme and calibrate your new tyre sensors to ensure that they are providing accurate information about your tyre pressures at all times.</p>
-                    <h2>Why Choose Mobile Tyres Nottingham?</h2>
-                    <ul>
-                        <li>Convenient and efficient service that comes to you.</li>
-                        <li>Experienced technicians who use state-of-the-art equipment.</li>
-                        <li>Wide range of tyres from leading manufacturers at competitive prices.</li>
-                        <li>Exceptional customer service and integrity as a family-run business.</li>
-                        <li>Open 6 days a week with <a href="/emergency-tyre-replacement">same day fitting</a> available.</li>
-                    </ul>
-                    <h2>Get A Quote For Tyres In {title}</h2>
-                    <p>At Mobile Tyres Nottingham, we are committed to providing customers in {title} with a range of high-quality services that are both efficient and affordable. <a href="/contact-us">Contact us</a> today to learn more about our services or to schedule an appointment.</p>
-                </main>
+                <div class="col-12 col-lg-8">
+                    <main>
+                        <h1 class="text-center text-lg-start">Mobile Tyre Fitting in {title}</h1>
+                        <p>Do you find yourself stranded with a <strong>flat tyre in {title}?</strong> Why not try our hassle-free <strong>mobile tyre fitting</strong> service instead! Our team can travel to your location, whether it's at home or on the side of the road, and install new tyres for you today.</p>
+                        <div class="p-4 bg-light my-3 rounded-3">
+                            <h2>About {title}</h2>
+                            <p>{about}</p>
+                        </div>
+                        <h2>Tyre Services In {title}</h2>
+                        <p><strong>Mobile Tyres Nottingham</strong> offers a range of services in <strong>{title}</strong> and the surrounding areas to help keep your vehicle running safely and efficiently. Our <a href="/mobile-puncture-repair">mobile puncture repair service</a> is available to fix any holes or damage to your tyres, saving you the cost of buying new tyres. We also offer <a href="/locking-wheel-nut-removal">locking wheel nut removal</a> services for those who have lost or damaged their locking wheel nut key.</p>
+                        <p>If you're having trouble starting your vehicle, our <a href="/mobile-battery-replacement">mobile car battery replacement</a> service can help. We offer battery replacement on most makes and models of vehicles in {title}. Additionally, if your vehicle is equipped with <a href="/tyre-pressure-monitoring-systems">TPMS</a>, we can programme and calibrate your new tyre sensors to ensure that they are providing accurate information about your tyre pressures at all times.</p>
+                    </main>
+                    <article>
+                        <h2>Why Choose Mobile Tyres Nottingham?</h2>
+                        <ul>
+                            <li>Convenient and efficient service that comes to you.</li>
+                            <li>Experienced technicians who use state-of-the-art equipment.</li>
+                            <li>Wide range of tyres from leading manufacturers at competitive prices.</li>
+                            <li>Exceptional customer service and integrity as a family-run business.</li>
+                            <li>Open 6 days a week with <a href="/emergency-tyre-replacement">same day fitting</a> available.</li>
+                        </ul>
+                    </article>
+                    <article>
+                        <h2>Get A Quote For Tyres In {title}</h2>
+                        <p>At Mobile Tyres Nottingham, we are committed to providing customers in {title} with a range of high-quality services that are both efficient and affordable. <a href="/contact-us">Contact us</a> today to learn more about our services or to schedule an appointment.</p>
+                    </article>
+                </div>
                 <div class="col-12 col-lg-4">
-                    <aside class="container">
-                        <div class="border rounded-3 shadow-sm py-4 row mb-3">
-                            <div class="col-3 text-center">
-                                <i class="bi bi-calendar fs-1"></i>
-                            </div>
-                            <div class="col-9 text-start">
-                                <h3 class="mb-0">Flexible Service</h3>
-                                <p class="mb-0">Open 6 days a week</p>
-                            </div>
-                        </div>
-                        <div class="border rounded-3 shadow-sm py-4 bg-dark text-white row mb-3">
-                            <div class="col-3 text-center">
-                                <i class="bi bi-car-front fs-1"></i>
-                            </div>
-                            <div class="col-9 text-start">
-                                <h3 class="mb-0">Fast Arrival</h3>
-                                <p class="mb-0">Same day service</p>
-                            </div>
-                        </div>
-                        <div class="border rounded-3 shadow-sm bg-success text-white py-4 row mb-3">
-                            <div class="col-3 text-center">
-                                <i class="bi bi-map fs-1"></i>
-                            </div>
-                            <div class="col-9 text-start">
-                                <h3 class="mb-0">Local Areas</h3>
-                                <p class="mb-0">We serve {title} and surrounding areas</p>
-                            </div>
-                        </div>
-                    </aside>
+                    <Benefits />
                 </div>
             </div>
         </div>
