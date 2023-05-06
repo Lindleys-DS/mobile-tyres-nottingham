@@ -1,8 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Hero from "../components/Hero.astro"
-import Testimonials from "../components/Testimonials.astro"
-import CTA from "../components/CTA.astro"
+import ServiceLayout from "../layouts/ServiceLayout.astro"
 
 const title = "Mobile Tyre Fitting In Nottingham"
 const description = "Change your tyres at home with our mobile tyre fitting service. We cover Nottingham and surrounding areas. Call us today for a quote."
@@ -14,54 +11,14 @@ const formOption = "tyreclick"
 const mainHeading = "Mobile Tyre Fitting In Nottingham"
 ---
 
-<Layout title={title} description={description} index={index}>
-    <Hero heading={heading} tagline={tagline} bgImg={bgImg} formOption={formOption} />
-    <div class="container py-5">
-        <div class="row">
-            <main class="col-12 col-lg-8">
-                <h1 class="text-center text-lg-start">{mainHeading}</h1>
-                <p><strong>Mobile tyre fitting</strong> is a relatively new but rapidly expanding industry due to the convenience of the service that is offered.</p>
-                <p>You simply call us with the <strong>tyre size</strong> of your vehicle and we can be at your location within <em>90 minutes</em> to replace your tyres. This can either be done as an <a href="/emergency-tyre-replacement">emergency in a breakdown situation</a> or as a replacement service to using your local garage.</p>
-                <p>Modern technology has allowed for this service to come at no extra cost.</p>
-                <p>All of our vans have been equipped with the best equipment money can buy and is suitable to use with all tyres, including <a href="/posts/what-is-a-run-flat-tyre">run flats</a> and low profile tyres.</p>
-                <p>We can also replace tyres that have Tyron bands fitted such as <a href="/mobile-caravan-tyre-fitting">caravan tyres.</a></p>
-                <h2>Mobile Tyre Fitting Covering the Whole of Nottingham</h2>
-                <p>With multiple vans in <strong>Nottingham</strong>, we aim to respond to any <strong>tyre call-outs</strong> within 90 minutes.</p>
-                <p>We cover Arnold, Beeston, Carlton, Hucknall, Ilkeston, Kirkby-In-Ashfield, Long Eaton, Mansfield, Newark, Sutton-In-Ashfield, West Bridgford, Worksop and surrounding areas.</p>
-            </main>
-            <div class="col-12 col-lg-4">
-                <aside class="container">
-                    <div class="border rounded-3 shadow-sm py-4 row mb-3">
-                        <div class="col-3 text-center">
-                            <i class="bi bi-calendar fs-1"></i>
-                        </div>
-                        <div class="col-9 text-start">
-                            <h3 class="mb-0">Flexible Service</h3>
-                            <p class="mb-0">Open 6 days a week</p>
-                        </div>
-                    </div>
-                    <div class="border rounded-3 shadow-sm py-4 bg-dark text-white row mb-3">
-                        <div class="col-3 text-center">
-                            <i class="bi bi-car-front fs-1"></i>
-                        </div>
-                        <div class="col-9 text-start">
-                            <h3 class="mb-0">Fast Arrival</h3>
-                            <p class="mb-0">Same day service</p>
-                        </div>
-                    </div>
-                    <div class="border rounded-3 shadow-sm bg-success text-white py-4 row mb-3">
-                        <div class="col-3 text-center">
-                            <i class="bi bi-map fs-1"></i>
-                        </div>
-                        <div class="col-9 text-start">
-                            <h3 class="mb-0">Local Areas</h3>
-                            <p class="mb-0">We serve {title} and surrounding areas</p>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </div>
-    <Testimonials />
-    <CTA />
-</Layout>
+
+<ServiceLayout title={title} description={description} index={index} bgImg={bgImg} heading={heading} tagline={tagline} formOption={formOption} mainHeading={mainHeading}>
+    <p><strong>Mobile tyre fitting</strong> is a relatively new but rapidly expanding industry due to the convenience of the service that is offered.</p>
+    <p>You simply call us with the <strong>tyre size</strong> of your vehicle and we can be at your location within <em>90 minutes</em> to replace your tyres. This can either be done as an <a href="/emergency-tyre-replacement">emergency in a breakdown situation</a> or as a replacement service to using your local garage.</p>
+    <p>Modern technology has allowed for this service to come at no extra cost.</p>
+    <p>All of our vans have been equipped with the best equipment money can buy and is suitable to use with all tyres, including <a href="/posts/what-is-a-run-flat-tyre">run flats</a> and low profile tyres.</p>
+    <p>We can also replace tyres that have Tyron bands fitted such as <a href="/mobile-caravan-tyre-fitting">caravan tyres.</a></p>
+    <h2>Mobile Tyre Fitting Covering the Whole of Nottingham</h2>
+    <p>With multiple vans in <strong>Nottingham</strong>, we aim to respond to any <strong>tyre call-outs</strong> within 90 minutes.</p>
+    <p>We cover Arnold, Beeston, Carlton, Hucknall, Ilkeston, Kirkby-In-Ashfield, Long Eaton, Mansfield, Newark, Sutton-In-Ashfield, West Bridgford, Worksop and surrounding areas.</p>
+</ServiceLayout>

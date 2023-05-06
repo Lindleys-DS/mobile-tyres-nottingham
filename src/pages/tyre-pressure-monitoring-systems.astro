@@ -1,8 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Hero from "../components/Hero.astro"
-import Testimonials from "../components/Testimonials.astro"
-import CTA from "../components/CTA.astro"
+import ServiceLayout from "../layouts/ServiceLayout.astro"
 
 const title = "Tyre Pressure Monitoring Systems - Mobile Tyres Nottingham"
 const description = "Our mobile tyre fitters are fully trained to service and programme new TPMS sensors to any car make and model."
@@ -14,59 +11,6 @@ const formOption = "registration"
 const mainHeading = "Tyre Pressure Sensors In Nottingham"
 ---
 
-<Layout title={title} description={description} index={index}>
-    <Hero heading={heading} tagline={tagline} bgImg={bgImg} formOption={formOption} />
-    <div class="container py-5">
-        <div class="row">
-            <main class="col-12 col-lg-8">
-                <h1 class="text-center text-lg-start">{mainHeading}</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic eaque alias dolorem temporibus minima illo in nisi culpa, incidunt beatae similique ex nostrum nulla harum, magni nihil officiis est repellat?</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo sint veniam ex? Repudiandae accusantium, quidem sint voluptatum a, iusto beatae quo deleniti cum architecto accusamus fugiat ducimus, adipisci ea illum!</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam qui, magnam officiis a commodi est, nemo modi nostrum sit ipsa fugiat! Quaerat vitae sed magni assumenda aperiam? Iure, amet? Illum.</p>
-                <h2>Why Choose Mobile Tyres Nottingham?</h2>
-                <ul>
-                    <li>Convenient and efficient service that comes to you.</li>
-                    <li>Experienced technicians who use state-of-the-art equipment.</li>
-                    <li>Wide range of tyres from leading manufacturers at competitive prices.</li>
-                    <li>Exceptional customer service and integrity as a family-run business.</li>
-                    <li>Open 6 days a week with <a href="/emergency-tyre-replacement">same day fitting</a> available.</li>
-                </ul>
-                <h2>Get A Quote Today</h2>
-                <p>At Mobile Tyres Nottingham, we are committed to providing customers with a range of high-quality services that are both efficient and affordable. <a href="/contact-us">Contact us</a> today to learn more about our services or to schedule an appointment.</p>
-            </main>
-            <div class="col-12 col-lg-4">
-                <aside class="container">
-                    <div class="border rounded-3 shadow-sm py-4 row mb-3">
-                        <div class="col-3 text-center">
-                            <i class="bi bi-calendar fs-1"></i>
-                        </div>
-                        <div class="col-9 text-start">
-                            <h3 class="mb-0">Flexible Service</h3>
-                            <p class="mb-0">Open 6 days a week</p>
-                        </div>
-                    </div>
-                    <div class="border rounded-3 shadow-sm py-4 bg-dark text-white row mb-3">
-                        <div class="col-3 text-center">
-                            <i class="bi bi-car-front fs-1"></i>
-                        </div>
-                        <div class="col-9 text-start">
-                            <h3 class="mb-0">Fast Arrival</h3>
-                            <p class="mb-0">Same day service</p>
-                        </div>
-                    </div>
-                    <div class="border rounded-3 shadow-sm bg-success text-white py-4 row mb-3">
-                        <div class="col-3 text-center">
-                            <i class="bi bi-map fs-1"></i>
-                        </div>
-                        <div class="col-9 text-start">
-                            <h3 class="mb-0">Local Areas</h3>
-                            <p class="mb-0">We serve {title} and surrounding areas</p>
-                        </div>
-                    </div>
-                </aside>
-            </div>
-        </div>
-    </div>
-    <Testimonials />
-    <CTA />
-</Layout>
+<ServiceLayout title={title} description={description} index={index} bgImg={bgImg} heading={heading} tagline={tagline} formOption={formOption} mainHeading={mainHeading}>
+    <!-- Content for tpms -->
+</ServiceLayout>
