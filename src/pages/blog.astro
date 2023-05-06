@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro"
+const allPosts = await Astro.glob("../pages/posts/*.md")
+const title = "Blog - Mobile Tyres Nottingham"
+const description = "Find the latest tyre trade news and information on our blog section."
+const index = true
+---
+
+<Layout title={title} description={description} index={index}>
+    <div class="py-5 bg-secondary">
+        <div class="container">
+            <h1 class="text-center text-light fw-bold">Blog</h1>
+        </div>
+    </div>
+    <section class="container">
+        { allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    </section>
+</div>
+</Layout>
