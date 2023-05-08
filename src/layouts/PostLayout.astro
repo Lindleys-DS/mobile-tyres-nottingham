@@ -3,7 +3,20 @@ import Layout from "./Layout.astro"
 const { frontmatter } = Astro.props;
 ---
 <Layout title={frontmatter.title} index={true} description={frontmatter.description}>
-<h1>{frontmatter.title}</h1>
-<p>Written by {frontmatter.author}</p>
-<slot />
+    <main>
+        <div class="bg-secondary py-5">
+            <h1 class="container text-center text-white fw-bold">{ frontmatter.title }</h1>
+        </div>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-8">
+                    <slot />
+                </div>
+                <div class="col-12 col-lg-4">
+                    <img src={frontmatter.img.url} alt={frontmatter.img.alt} class="w-100">
+                    <p class="fw-bold py-3 fs-5">Tags</p>
+                </div>
+            </div>    
+        </div>
+    </main>
 </Layout>
