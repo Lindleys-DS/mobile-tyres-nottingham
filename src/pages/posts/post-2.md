@@ -1,10 +1,11 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: "The Dangers of Part Worn Tyres"
+date: "2017-02-08"
 excerpt: "Part worn tyres might seem like a good way to save money. But you might be taking a huge risk..."
 img:
     url: '/img/the-dangers-of-part-worn-tyres.jpg' 
-    alt: 'Lindleys Mobile Tyres van'
+    alt: 'Badly cracked part worn tyre'
 tags: ['Mobile tyre fitting']
 ---
 The BBC recently suggested that 4.5 million part-worn tyres are sold annually in the UK. This figure is set to rise in 2017 making the part-worn industry a very lucrative one. 

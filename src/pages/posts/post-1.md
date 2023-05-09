@@ -1,6 +1,7 @@
 ---
 layout: "../../layouts/PostLayout.astro"
 title: "The Rise of Mobile Tyre Fitting"
+date: "2017-02-01"
 excerpt: "In the last 10 years, mobile tyre fitting has become ever more popular. But why?"
 img:
     url: '/img/the-rise-of-mobile-tyre-fitting.jpg' 

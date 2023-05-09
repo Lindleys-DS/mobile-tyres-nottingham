@@ -8,11 +8,11 @@ const { frontmatter } = Astro.props;
             <h1 class="container text-center text-white fw-bold">{ frontmatter.title }</h1>
         </div>
         <div class="container py-5">
-            <div class="row">
-                <div class="col-12 col-lg-8">
+            <div class="row gx-5">
+                <div class="col-12 col-lg-7">
                     <slot />
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-5">
                     <img src={frontmatter.img.url} alt={frontmatter.img.alt} class="w-100">
                     <p class="fw-bold py-3 fs-5">Tags</p>
                 </div>
